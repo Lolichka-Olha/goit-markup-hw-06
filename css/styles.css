@@ -16,6 +16,7 @@
   --backdrop-bg-color: rgba(0, 0, 0, 0.2);
   --border-header-color: #ececec;
   --border-gallery-color: #eeeeee;
+  --border-subscription-color: rgba(255, 255, 255, 0.3);
   --border-modal-btn-close-color: rgba(0, 0, 0, 0.1);
   --card-gallery-gap: 30px;
   --social-link-gap: 10px;
@@ -29,6 +30,7 @@
     1px 4px 6px rgba(0, 0, 0, 0.16);
   --modal-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  --subscription-btn-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   --first-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -49,7 +51,7 @@ p {
   margin-bottom: 0;
 }
 
-ul {
+.list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -63,7 +65,7 @@ ul {
 
 /* page-header */
 
-.page-header {
+.header {
   border-bottom: 1px solid var(--border-header-color);
 }
 
@@ -532,6 +534,84 @@ ul {
   background-color: var(--accent-color);
 }
 
+/* subscription */
+
+.subscription {
+  width: 570px;
+  padding: 12px 0 34px;
+}
+
+.subscription-title {
+  margin-bottom: 20px;
+
+  color: var(--primary-color);
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.subscription-field {
+  display: flex;
+  align-items: center;
+}
+
+.subscription-input {
+  min-width: 358px;
+  padding: 15px 16px;
+  margin-right: 12px;
+
+  background-color: transparent;
+  color: var(--primary-color);
+  border-radius: 4px;
+  border: 1px solid var(--border-subscription-color);
+  outline: none;
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+
+  transition: border-color var(--first-transition);
+}
+
+.subscription-input:hover,
+.subscription-input:focus {
+  border-color: var(--accent-color);
+}
+
+.subscription-input::placeholder {
+  color: var(--footer-contacts-color);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.subscription-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 200px;
+  padding: 10px 0;
+  border-radius: 4px;
+  border: transparent;
+  box-shadow: var(--subscription-btn-box-shadow);
+
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  transition: background-color var(--first-transition);
+}
+
+.subscription-btn:hover,
+.subscription-btn:focus {
+  background-color: var(--btn-accent-color);
+}
+
+.subscription-icon {
+  margin-left: var(--social-link-gap);
+}
+
 /* Оформление для portfolio.html */
 
 /* filter */
@@ -680,6 +760,7 @@ ul {
   left: 50%;
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
 
   background-color: var(--primary-color);
   box-shadow: var(--modal-box-shadow);
@@ -713,3 +794,5 @@ ul {
 .modal-btn-close:focus {
   color: var(--accent-color);
 }
+
+/* modal-form */

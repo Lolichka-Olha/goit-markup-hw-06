@@ -20,13 +20,13 @@
   </head>
   <body>
     <!-- page-header -->
-    <header class="page-header">
+    <header class="header">
       <div class="container">
         <!-- navigation -->
         <div class="nav-main">
           <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
           <nav class="nav-menu">
-            <ul class="nav-list">
+            <ul class="list nav-list">
               <li class="nav-item"><a href="./index.html" class="nav-link">Студия</a></li>
               <li class="nav-item">
                 <a href="./portfolio.html" class="nav-link-current">Портфолио</a>
@@ -35,7 +35,7 @@
             </ul>
           </nav>
 
-          <ul class="contact-list">
+          <ul class="list contact-list">
             <li class="contact-item">
               <a href="mailto:info@devstudio.com" class="contact-link">
                 <svg class="contact-icon" width="16" height="12">
@@ -63,7 +63,7 @@
           <h1 class="section-title visually-hidden">Портфолио</h1>
 
           <!-- filter  -->
-          <ul class="filter-list">
+          <ul class="list filter-list">
             <li class="filter-item">
               <button class="filter-btn-current" type="button">Все</button>
             </li>
@@ -76,7 +76,7 @@
           </ul>
 
           <!-- gallery -->
-          <ul class="gallery-list">
+          <ul class="list gallery-list">
             <li class="gallery-item">
               <a href="" class="gallery-link">
                 <div class="gallery-thumb">
@@ -276,7 +276,7 @@
             <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
 
             <address class="residence-place">
-              <ul class="residence-list">
+              <ul class="list residence-list">
                 <li class="residence-item">
                   <a
                     href="https://goo.gl/maps/b1yRZs4WcSMnC91e6"
@@ -298,7 +298,7 @@
 
           <div class="social">
             <p class="social-text">присоединяйтесь</p>
-            <ul class="social-list">
+            <ul class="list social-list">
               <li class="social-item">
                 <a href="" class="social-link" target="_blank" rel="noopener noreferrer">
                   <svg class="social-icon" width="20" height="20">
@@ -328,6 +328,28 @@
                 </a>
               </li>
             </ul>
+          </div>
+
+          <div class="subscription">
+            <form class="subscription-form" autocomplete="off">
+              <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+              <div class="subscription-field">
+                <label>
+                  <input
+                    class="subscription-input"
+                    type="email"
+                    name="email"
+                    placeholder="E-mail"
+                  />
+                </label>
+                <button class="subscription-btn" type="submit">
+                  Подписаться
+                  <svg class="subscription-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
