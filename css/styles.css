@@ -820,6 +820,7 @@ p {
 
 .modal-form-input,
 .modal-form-comment {
+  display: block;
   width: 100%;
   padding: 12px;
   padding-left: 42px;
@@ -914,17 +915,19 @@ p {
   transition: background-color var(--first-transition), border-color var(--first-transition);
 }
 
-.checkbox-input:checked + .checkbox-icon {
+.checkbox-input:hover + .checkbox-icon,
+.checkbox-input:focus + .checkbox-icon {
+  border-color: var(--accent-color);
+}
+
+.checkbox-input:focus + .checkbox-icon,
+.checkbox-input:checked + .checkbox-icon,
+.checkbox-input:required {
   border: transparent;
   background-color: var(--accent-color);
   background-image: url(../images/icon-check1.svg);
   background-size: contain;
   background-origin: border-box;
-}
-
-.checkbox-input:hover + .checkbox-icon,
-.checkbox-input:focus + .checkbox-icon {
-  border-color: var(--accent-color);
 }
 
 .checkbox-label-link {

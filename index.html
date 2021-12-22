@@ -426,7 +426,7 @@
           </div>
 
           <div class="subscription">
-            <form class="subscription-form" autocomplete="off">
+            <form class="subscription-form" autocomplete="off" method="POST" action="#">
               <p class="subscription-text">Подпишитесь на рассылку</p>
               <div class="subscription-field">
                 <input class="subscription-input" type="email" name="email" placeholder="E-mail" />
@@ -453,7 +453,7 @@
           </svg>
         </button>
 
-        <form class="modal-form" autocomplete="off">
+        <form class="modal-form" autocomplete="off" method="POST" action="#">
           <p class="modal-form-text">Оставьте свои данные, мы вам перезвоним</p>
 
           <label class="modal-form-field">
@@ -490,7 +490,7 @@
           </label>
          
           <label class="checkbox-field">
-            <input class="checkbox-input" type="checkbox" name="policy" value="all" />
+            <input class="checkbox-input" type="checkbox" name="agree" value="all" required/>
             <span class="checkbox-icon"></span>
             <span class="checkbox-label"
               >Соглашаюсь с рассылкой и принимаю
